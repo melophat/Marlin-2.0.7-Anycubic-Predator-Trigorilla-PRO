@@ -1,0 +1,41 @@
+Send: M503
+Recv: echo:  G21    ; Units in mm (mm)
+Recv: echo:  M149 C ; Units in Celsius
+Recv: 
+Recv: echo:; Filament settings: Disabled
+Recv: echo:  M200 S0 D1.75
+Recv: echo:; Steps per unit:
+Recv: echo: M92 X80.00 Y80.00 Z80.00 E412.37
+Recv: echo:; Maximum feedrates (units/s):
+Recv: echo:  M203 X1000.00 Y1000.00 Z1000.00 E1000.00
+Recv: echo:; Maximum Acceleration (units/s2):
+Recv: echo:  M201 X2000.00 Y2000.00 Z2000.00 E4000.00
+Recv: echo:; Acceleration (units/s2): P<print_accel> R<retract_accel> T<travel_accel>
+Recv: echo:  M204 P3000.00 R3000.00 T3000.00
+Recv: echo:; Advanced: B<min_segment_time_us> S<min_feedrate> T<min_travel_feedrate> X<max_x_jerk> Y<max_y_jerk> Z<max_z_jerk> E<max_e_jerk>
+Recv: echo:  M205 B20000.00 S0.00 T0.00 X10.00 Y10.00 Z10.00 E5.00
+Recv: echo:; Unified Bed Leveling:
+Recv: echo:  M420 S0 Z0.00
+Recv: 
+Recv: Unified Bed Leveling System v1.01 inactive
+Recv: 
+Recv: echo:; Active Mesh Slot: -1
+Recv: echo:; EEPROM can hold 2 meshes.
+Recv: 
+Recv: echo:; Endstop adjustment:
+Recv: echo:  M666 X0.00 Y-1.35 Z-0.76
+Recv: echo:; Delta settings: L<diagonal rod> R<radius> H<height> S<segments per sec> XYZ<tower angle trim> ABC<rod trim>
+Recv: echo:  M665 L440.00 R227.42 H438.36 S200.00 X-0.08 Y0.03 Z0.05 A0.00 B0.00 C0.00
+Recv: echo:; Material heatup parameters:
+Recv: echo:  M145 S0 H180 B40 F255
+Recv: echo:  M145 S1 H220 B40 F255
+Recv: echo:; PID settings:
+Recv: echo:  M301 P24.43 I1.70 D87.62
+Recv: echo:  M304 P49.68 I19.11 D180.53
+Recv: echo:; Z-Probe Offset (mm):
+Recv: echo:  M851 X0.00 Y0.00 Z-14.08
+Recv: echo:; Filament load/unload lengths:
+Recv: echo:  M603 L200.00 U200.00
+Recv: echo:; Filament runout sensor:
+Recv: echo:  M412 S1
+Recv: ok
